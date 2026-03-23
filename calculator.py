@@ -6,5 +6,5 @@ def divide(a, b):
     Искусственный баг: если b=0 возвращает 0 вместо ошибки
     """
     if b == 0:
-        return 0  # баг: должно быть raise ZeroDivisionError
+        raise ZeroDivisionError("division by zero") # исправили баг
     return a / b
